@@ -1,29 +1,25 @@
 import { format } from "prettier";
 import { createElement } from "../../utils/createelement";
 
-export function createCard({imgSrc, name, status, species, origin}){
-return createElement("div",{
-    className:"card",
+export function createCard({img, name, species, origin}){
+return createElement("div"),{
     children:[
         createElement("img",{
-            className:"card__portrait",
-            src: imgSrc,
+            className:"portrait",
+            scr: img,
         }),
         createElement("h2",{
-            className:"card__name",
+            className:"name",
             innerText: name,
         }),
         createElement("p",{
-        innerText:`${status === "Alive"? "😎" : "💀"} - ${status}`,
-        }),
-        createElement("p",{
-            className:"info__species",
+            className:"species",
             innerText: species,
         }),
         createElement("p",{
-            className:"info__origin",
-            innerText: origin.name,
+            className:"origin",
+            innerText: origin,
         }),
     ],
-});
+};
 }
