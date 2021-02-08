@@ -8,8 +8,9 @@ export default {
 
 export const Rick = () =>
 createCard({
-    img: "https://https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+    imgSrc: "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
     name: "Rick Sanchenz",
+    status:"Alive",
     species: "Human",
-    origin: "Earth (C-137)",
+    origin: { name: "Earth (C-137)"},
 })
