@@ -1,0 +1,40 @@
+Container erstellen  10:52
+const container = createElement("div",)
+
+
+Array um verschiedene cards aufzubauen 10:53
+
+Array Map Beispiel
+kv Array =
+(Array Method Map)
+
+14:44
+wann brauche ich return wann nicht? Bild
+
+14:45
+API.TS
+in einer asyncronen funktion können wir auf einzelne Elemente warten
+
+response, von wo soll sich das fatch die daten holen?
+ich gebe url ein...
+
+fetch gibt ein promise zurück...
+durch das async keyword 
+können wir schon weiter machen mit dem weiteren code,
+bis unsere oberen zeilen gelesen werden müssen.
+
+zeile 22
+zeile 67
+warum zwei mal?
+Philip kriegt den auftrag bier zu holen... versprechen ich bring das bier.
+ich warte in der türe oder mach weiter.
+wir warten...
+philip bringt den character zurück...
+in api.ts wir warten auf response
+response.jason ist die packung
+
+im loader (card.stories.ts) sag ich ich möchte den ganzen character
+
+async ist effizienter
+
+

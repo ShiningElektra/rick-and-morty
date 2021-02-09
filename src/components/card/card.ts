@@ -1,4 +1,3 @@
-import { format } from "prettier";
 import { createElement } from "../../utils/createelement";
 
 // function numberButton(result) {
