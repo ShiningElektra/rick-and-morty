@@ -32,7 +32,6 @@ export const Multiple = () => {
             species: "Human",
             origin: { name: "Earth (C-137)" },
         },
-        {}
     ];
 
     const container = createElement("article", {
@@ -42,3 +41,13 @@ export const Multiple = () => {
 
     return container;
 };
+
+export const CharacterFromAPI = (args, { loaded: { character } }) => {
+    return createCard(character);
+};
+
+CharacterFromAPI.loaders = [
+    async () => ({
+        character: await getCharacter(666),
+    }),
+];
