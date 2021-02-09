@@ -1,19 +1,24 @@
 .card {
-    display: grid;
-    box-shadow: 0 3px 7px 0 rgba(2, 0, 3, 3);
-    width: 100% ;
-    padding-bottom: 2em;
+  display: grid;
+  border-radius: 0.5em;
+  box-shadow: 0 3px 7px 0 rgba(2, 0, 3, 3);
+  width: 100%;
+  padding-bottom: 2em;
 }
-
 .card__info {
-    padding: 20px ;
+  padding: 20px;
 }
 
-.card__name{
-    text-align: center;
-} 
+.card__name {
+  text-align: center;
+}
 
-.card p{
-    margin: 0;
-    padding: 0 0 0 2em;
+.card p {
+  margin: 0;
+  padding: 0 0 0 2em;
+}
+
+.card__portrait {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
 }
