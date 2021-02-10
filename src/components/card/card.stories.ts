@@ -106,3 +106,32 @@ export const RandomCharacter = () => {
   });
   return container;
 };
+
+export const CharactersFromAPIwithFilter = (
+  args,
+  { loaded: { characters } }
+) => {
+  const input = createElement("input", {
+    onchange: async () => {
+      const newCharacters = await getCharacters(input.value);
+      const newCards = newCharacters.map((character) => createCard(character));
+      characterContainer.innerHTML = "";
+      container.append(...newCards);
+    },
+  });
+
+  const characterContainer = createElement("div", {
+    childs: characters.map((character) => createCard(character)),
+  });
+  const container = createElement("div", {
+    className: "container",
+    childs: [input, characterContainer],
+  });
+  return container;
+};
+
+CharactersFromAPIwithFilter.loaders = [
+  async () => ({
+    characters: await getCharacters(),
+  }),
+];
