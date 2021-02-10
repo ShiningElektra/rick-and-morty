@@ -37,4 +37,56 @@ im loader (card.stories.ts) sag ich ich möchte den ganzen character
 
 async ist effizienter
 
+10.02.2021 Async Erklärung 9:33
+function run added, setTimeout-> macht einen neuen Prozess auf und ruft nach einer bestimmten zeit diesen auf.
+bild 09:36
+
+1000ms sind 1sek
+
+1+2+3 wird ausgegeben und die 4 erst nach einer sekunde...
+
+variante setTimeout
+09:43
+
+async function run wait for a promise...
+Beispiele Vergleichen sind identisch
+09:45
+
+Promises,async/await Javascript.info
+
+Beispiel Promise 
+10:15
+Async function mit await
+10:19
+Auf Button Click warten
+10:23
+wiederholte wiedergabe und index vergeben ohne setTimeout
+
+response ist das promise result = await (fetch) wird gebraucht 
+10:41
+
+mit einem Ausrufezeichen wird ein true zu false 11:12
+
+1 typ generieren der parameter generieret
+->type character
+function die convect to character heißt 11:23
+erwartet die function aus apiCharachter:apiCharachter
+function convertieren die wir immer wieder verwenden können...
+
+12:05 ein object wird generieret
+wird übergeben in zeile 57
+
+as APICharacter Type Definitionen...
+braucht man damit er zeigt wenn welche nicht findet wie z.B. FirstName
+für die Autovervollständigung
+
+Wir übersetzt wie aus dem spanischen z.B.
+imgScr: apiCharacter.image,
+
+12:14
+neues Objet erstellen auf grund von einem anderen Object
+
+12:19
+was für ein Typ hat apiCharacter? ->
+convertToCharacter ist ein Type:character
 
