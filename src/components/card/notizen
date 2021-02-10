@@ -90,3 +90,8 @@ neues Objet erstellen auf grund von einem anderen Object
 was für ein Typ hat apiCharacter? ->
 convertToCharacter ist ein Type:character
 
+Filter character
+16:22
+
+hinten an den link was anhängen
+character/?name=rick
