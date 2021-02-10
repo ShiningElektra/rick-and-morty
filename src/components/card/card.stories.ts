@@ -1,7 +1,11 @@
 import "./card.css";
 import { createCard } from "./card";
 import { createElement } from "../../utils/createelement";
-import { getCharacter, getCharacters } from "../../utils/api";
+import {
+  getCharacter,
+  getCharacterCount,
+  getCharacters,
+} from "../../utils/api";
 
 export default {
   title: "Components/Card",
@@ -72,8 +76,10 @@ export const RandomCharacter = () => {
     onclick: async () => {
       // Verify each step (alert, console.log)
       // 1) generate random character id
-      const random = Math.floor(Math.random() * 666) + 1;
-      console.log({ random });
+      const characterCount = await getCharacterCount();
+
+      const random = Math.floor(Math.random() * characterCount) + 1;
+      console.log({ random, characterCount });
 
       // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#getting_a_random_number_between_two_values
       // 2) getCharacter from API

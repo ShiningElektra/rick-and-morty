@@ -66,3 +66,9 @@ export async function getCharacters() {
   );
   return characters;
 }
+
+export async function getCharacterCount() {
+  const response = await fetch(`https://rickandmortyapi.com/api/character`);
+  const result = (await response.json()) as APICharacters;
+  return result.info.count;
+}
